@@ -4,6 +4,14 @@
 
 [![Kaggle Notebook](https://img.shields.io/badge/Kaggle-Notebook-blue?logo=kaggle)](https://www.kaggle.com/code/cellrepairai/cellrepair-health-educator-medgemma)
 [![MedGemma](https://img.shields.io/badge/Model-MedGemma%201.5%204B-green)](https://huggingface.co/google/medgemma-1.5-4b-it)
+[![Demo Video](https://img.shields.io/badge/Demo-YouTube-red?logo=youtube)](https://youtu.be/4XUU19DFdJo)
+
+## Demo Video
+
+[![CellRepair Health Educator Demo](https://img.youtube.com/vi/4XUU19DFdJo/maxresdefault.jpg)](https://youtu.be/4XUU19DFdJo)
+
+▶️ [Watch the 3-minute demo on YouTube](https://youtu.be/4XUU19DFdJo)
+
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 ## Overview
