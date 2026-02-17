@@ -96,7 +96,7 @@ Patient Question → Structured Education Prompt → MedGemma 1.5 4B → Patient
 **Limitations:** Research prototype, not validated for clinical use. Currently English-only. Multimodal vision requires additional VRAM beyond text-only inference. Future work: multilingual support, clinical validation studies, patient history personalization.
 
 **Code:** [github.com/powerforyou74/cellrepair-medgemma](https://github.com/powerforyou74/cellrepair-medgemma)
-**Video:** [Demo Video Link — TODO]
+**Video:** [CellRepair Health Educator — MedGemma Impact Challenge Demo](https://youtu.be/4XUU19DFdJo)
 
 ---
 
