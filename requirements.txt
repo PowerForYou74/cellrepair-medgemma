@@ -1,0 +1,9 @@
+# MedGemma Impact Challenge – CellRepair AI
+# Patient Education for Cellular Health
+#
+# MedGemma 1.5 requires transformers >= 4.51.3
+torch>=2.0.0
+transformers>=4.51.3
+accelerate>=0.28.0
+huggingface_hub>=0.23.0
+Pillow>=10.0.0
