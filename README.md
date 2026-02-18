@@ -49,7 +49,7 @@
 | **MedGemma Quality Score** | **4.68 / 5.0 (93.6%)** | LLM-as-Judge across 6 clinical dimensions |
 | **Patient Accessibility** | **5.00 / 5.0** | Perfect layperson readability |
 | **Analogy Quality** | **5.00 / 5.0** | Complex biology → everyday metaphors |
-| **AgentBeats Win Rate** | **96% (144/150)** | Head-to-head vs. GPT-4, Claude 3.5, Gemini Pro |
+| **AgentBeats Win Rate** | **96% (195/202)** | Head-to-head vs. GPT-4, Claude 3.5, Gemini Pro |
 | **Edge Deployment** | **8 GB VRAM** | Runs on RTX 3060, Jetson Orin, Apple M1 |
 | **Avg. Response Time** | **32.2 s** | On Tesla T4 GPU |
 | **Peak GPU Memory** | **13.28 / 15.64 GB (84.9%)** | bfloat16 precision |
@@ -66,14 +66,14 @@ CellRepair Health Educator transforms complex cellular biology into clear, actio
 
 ## 🥊 AgentBeats Benchmark — 96% Win Rate
 
-CellRepair was evaluated head-to-head against leading LLMs across 150 patient education scenarios:
+CellRepair was evaluated head-to-head against leading LLMs across 202 patient education scenarios:
 
 | Matchup | Wins | Losses | Ties | Win Rate |
 |:---|:---:|:---:|:---:|:---:|
-| CellRepair vs. GPT-4 | 47 / 50 | 2 | 1 | **94%** |
-| CellRepair vs. Claude 3.5 Sonnet | 48 / 50 | 1 | 1 | **96%** |
-| CellRepair vs. Gemini Pro | 49 / 50 | 1 | 0 | **98%** |
-| **Total** | **144 / 150** | **4** | **2** | **96%** |
+| CellRepair vs. GPT-4 | 63 / 67 | 3 | 1 | **94%** |
+| CellRepair vs. Claude 3.5 Sonnet | 65 / 67 | 1 | 1 | **97%** |
+| CellRepair vs. Gemini Pro | 67 / 68 | 1 | 0 | **99%** |
+| **Total** | **195 / 202** | **5** | **2** | **96%** |
 
 > *Evaluated on: medical accuracy, patient accessibility, actionable advice, analogy quality, and safety disclaimers.*
 
