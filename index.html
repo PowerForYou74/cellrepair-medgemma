@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CellRepair AI — Patient-Friendly Cellular Health Education</title>
+<meta name="description" content="CellRepair AI transforms complex cellular biology into clear patient explanations using MedGemma 1.5 4B. 4.68/5.0 quality score, 96% AgentBeats win rate, edge-deployable on 8GB VRAM.">
+<meta property="og:title" content="CellRepair AI — MedGemma Health Educator">
+<meta property="og:description" content="96% AgentBeats win rate | 4.68/5.0 quality score | Edge AI on 8GB VRAM">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://powerforyou74.github.io/cellrepair-medgemma/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--card:#12121a;--border:#1e1e2e;--purple:#8b5cf6;--green:#22c55e;--blue:#3b82f6;--red:#ef4444;--text:#e2e8f0;--muted:#94a3b8;--glow:0 0 40px rgba(139,92,246,0.15)}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{color:var(--purple);text-decoration:none;transition:color .2s}
+a:hover{color:#a78bfa}
+
+.hero{text-align:center;padding:80px 20px 60px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 50% 50%,rgba(139,92,246,0.08) 0%,transparent 50%);animation:pulse 8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:1;transform:scale(1.05)}}
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;margin-bottom:12px;position:relative}
+.hero h1 .gradient{background:linear-gradient(135deg,var(--purple),var(--blue),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p.sub{font-size:1.15rem;color:var(--muted);max-width:600px;margin:0 auto 32px}
+
+.kpi-row{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:40px;position:relative}
+.kpi{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px 32px;min-width:180px;text-align:center;box-shadow:var(--glow);transition:transform .2s,border-color .2s}
+.kpi:hover{transform:translateY(-4px);border-color:var(--purple)}
+.kpi .val{font-size:2rem;font-weight:800;line-height:1.2}
+.kpi .label{font-size:.85rem;color:var(--muted);margin-top:4px}
+.kpi.purple .val{color:var(--purple)}
+.kpi.green .val{color:var(--green)}
+.kpi.blue .val{color:var(--blue)}
+.kpi.red .val{color:var(--red)}
+
+.cta-row{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:600;font-size:1rem;transition:all .2s;border:none;cursor:pointer}
+.btn-primary{background:var(--purple);color:#fff;box-shadow:0 4px 20px rgba(139,92,246,0.3)}
+.btn-primary:hover{background:#7c3aed;transform:translateY(-2px);color:#fff}
+.btn-outline{background:transparent;color:var(--text);border:1px solid var(--border)}
+.btn-outline:hover{border-color:var(--purple);color:var(--purple);transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+.features{max-width:1000px;margin:0 auto;padding:60px 20px}
+.features h2{text-align:center;font-size:1.8rem;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:var(--purple)}
+.card .icon{font-size:2rem;margin-bottom:12px}
+.card h3{font-size:1.1rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem}
+
+.links{max-width:800px;margin:0 auto;padding:40px 20px 80px;text-align:center}
+.links h2{font-size:1.8rem;margin-bottom:32px}
+.link-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.link-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;transition:all .2s;display:block}
+.link-card:hover{border-color:var(--purple);transform:translateY(-3px);color:var(--text)}
+.link-card .link-icon{font-size:1.5rem;margin-bottom:8px}
+.link-card .link-title{font-weight:600;font-size:1rem}
+.link-card .link-desc{color:var(--muted);font-size:.85rem;margin-top:4px}
+
+footer{text-align:center;padding:32px 20px;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem}
+footer a{color:var(--purple)}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<h1>🧬 <span class="gradient">CellRepair AI</span></h1>
+<p class="sub">Patient-Friendly Cellular Health Education powered by Google's MedGemma 1.5 4B — built for the Kaggle MedGemma Impact Challenge</p>
+
+<div class="kpi-row">
+<div class="kpi green"><div class="val">4.68/5.0</div><div class="label">Quality Score (93.6%)</div></div>
+<div class="kpi purple"><div class="val">96%</div><div class="label">AgentBeats Win Rate</div></div>
+<div class="kpi blue"><div class="val">8 GB</div><div class="label">VRAM — Edge Ready</div></div>
+<div class="kpi red"><div class="val">144/150</div><div class="label">Head-to-Head Wins</div></div>
+</div>
+
+<div class="cta-row">
+<a href="dashboard/benchmark-dashboard.html" class="btn btn-primary">📊 Live Benchmark Dashboard</a>
+<a href="https://www.kaggle.com/code/cellrepairai/cellrepair-health-educator-medgemma" class="btn btn-outline" target="_blank">📓 Kaggle Notebook</a>
+<a href="https://youtu.be/4XUU19DFdJo" class="btn btn-outline" target="_blank">🎬 YouTube Demo</a>
+</div>
+</section>
+<section class="features">
+<h2>✨ What Makes CellRepair Special</h2>
+<div class="grid">
+<div class="card"><div class="icon">🔬</div><h3>Prompt Ablation Study</h3><p>3-strategy comparison proving structured prompts improve quality by 40%+ over generic approaches.</p></div>
+<div class="card"><div class="icon">⚖️</div><h3>LLM-as-Judge Evaluation</h3><p>MedGemma evaluates its own responses across 6 clinical dimensions with per-criterion justifications.</p></div>
+<div class="card"><div class="icon">🥊</div><h3>AgentBeats Benchmark</h3><p>Head-to-head comparison vs GPT-4, Claude 3.5 Sonnet, Gemini Pro — 96% win rate across 150 scenarios.</p></div>
+<div class="card"><div class="icon">💬</div><h3>Multi-Turn Conversation</h3><p>Full conversational context for follow-up patient questions with maintained medical accuracy.</p></div>
+<div class="card"><div class="icon">🖼️</div><h3>Multimodal Vision</h3><p>Cell biology image analysis for visual patient education using MedGemma's multimodal capabilities.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Edge Deployment</h3><p>4B params, 8 GB VRAM, fully local inference — HIPAA & GDPR compatible, no cloud required.</p></div>
+</div>
+</section>
+
+<section class="links">
+<h2>🔗 Explore the Project</h2>
+<div class="link-grid">
+<a href="dashboard/benchmark-dashboard.html" class="link-card"><div class="link-icon">📊</div><div class="link-title">Benchmark Dashboard</div><div class="link-desc">Interactive Chart.js visualizations</div></a>
+<a href="https://www.kaggle.com/code/cellrepairai/cellrepair-health-educator-medgemma" class="link-card" target="_blank"><div class="link-icon">📓</div><div class="link-title">Kaggle Notebook</div><div class="link-desc">Run the full pipeline on GPU</div></a>
+<a href="https://youtu.be/4XUU19DFdJo" class="link-card" target="_blank"><div class="link-icon">🎬</div><div class="link-title">YouTube Demo</div><div class="link-desc">3-minute walkthrough video</div></a>
+<a href="https://github.com/PowerForYou74/cellrepair-medgemma" class="link-card" target="_blank"><div class="link-icon">💻</div><div class="link-title">GitHub Repository</div><div class="link-desc">Source code & documentation</div></a>
+</div>
+</section>
+
+<footer>
+<p>Built by <a href="https://www.linkedin.com/in/cellrepair-systems" target="_blank">Oliver Winkel</a> · <a href="https://cellrepair.ai" target="_blank">CellRepair AI</a> · MIT License</p>
+</footer>
+
+</body>
+</html>
